@@ -46,16 +46,6 @@ This project allows users to take quizzes based on **category** and **difficulty
 
 ---
 
-## 📂 Project Structure
-Dynamic-Quiz-App/
-│
-├── index.html      # Main HTML file
-├── style.css       # Styling and responsive design
-└──  script.js       # Quiz logic and data
-
-
----
-
 ## ⚙️ How the Application Works
 
 1. User selects a **quiz category** and **difficulty level**
