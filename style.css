@@ -1,0 +1,234 @@
+.bg-container{
+    height: 100vh; 
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.card-container {
+    height: auto;
+    max-height: 550px;
+    width: 90%;
+    max-width: 550px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.main-heading {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.label-element {
+    display: block;
+    margin-top: 15px;
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.select-element {
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.question-container {
+    width: 100%;
+    max-width: 560px;
+    background: linear-gradient(180deg, #ffffff, #f9fafc);
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 
+        0 10px 25px rgba(0,0,0,0.12),
+        0 0 0 1px rgba(0,0,0,0.05);
+    margin: 5% auto;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+.question-text {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+
+.option {
+    padding: 14px 16px;
+    margin: 12px 0;
+    background: #f4f6fb;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.option:hover {
+    transform: translateY(-2px);
+    background: #e9ecf3;
+}
+
+.option.selected {
+    background: #e7fff0;
+    border-color: #03fc41;
+    font-weight: 600;
+}
+
+.timer-box {
+    margin-top: 18px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #ff6b6b, #ff7675);
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6c5ce7, #4834d4);
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(108,92,231,0.4);
+}
+
+@media (max-width: 480px) {
+    .question-container {
+        padding: 20px;
+    }
+
+    .question-text {
+        font-size: 22px;
+    }
+}
+
+.result-container {
+    width: min(90%, 560px);
+    max-height: 90vh;
+    margin-top: 3%;
+    background: linear-gradient(180deg, #ffffff, #f9fafb);
+    border-radius: 16px;
+
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.15),
+        0 4px 10px rgba(0, 0, 0, 0.08);
+
+    padding: 24px;
+    overflow-y: auto;
+
+    animation: fadeUp 0.4s ease-in-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-container h1 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.result-container h1:not(:first-of-type) {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 16px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #1f2933;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #4f46e5;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.score-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #047857;
+    background: #ecfdf5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.time-list {
+    list-style: none;
+    padding: 0;
+}
+
+.time-list li {
+    background: #f3f4f6;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.chart-canvas {
+    display: block;
+    margin: 16px auto;
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.retake-btn {
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
