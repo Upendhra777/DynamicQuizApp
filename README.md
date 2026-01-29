@@ -47,12 +47,11 @@ This project allows users to take quizzes based on **category** and **difficulty
 ---
 
 ## 📂 Project Structure
-DynamicQuizApp/
+Dynamic-Quiz-App/
 │
-├── index.html # Main HTML file
-├── style.css # Styling and responsive design
-├── script.js # Quiz logic and data
-
+├── index.html      # Main HTML file
+├── style.css       # Styling and responsive design
+└──  script.js       # Quiz logic and data
 
 
 ---
@@ -119,5 +118,5 @@ _No installation or setup required_
 ## 👨‍💻 Author
 
 **Upendhra**  
-Computer Science Student | Frontend Developer  
+Computer Science Student | FullStack Developer  
 Passionate about building interactive web applications 🚀
